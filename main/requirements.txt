@@ -1,0 +1,6 @@
+gym==0.26.2
+imageio==2.31.4
+matplotlib==3.8.0
+minigrid==2.3.1
+numpy==1.26.4
+scipy==1.12.0
