@@ -7,13 +7,10 @@ This research evaluates and benchmarks the performance of traditional RL models 
 ## Embedding Stochastic MDP into LMDPs
 
 ![Embedding of stochastic MDP into LMDP](assets/img/lmdps/stochastic-mdp-embedding.png)
-*Embedding of stochastic MDP into LMDP implementation*
 
-### Embedding Deterministic MDPs into LMDPs
+## Embedding Deterministic MDPs into LMDPs
 
 ![Embedding of deterministic MDP into LMDP](assets/img/lmdps/deterministic-mdp-embedding-spa.png)
-*Embedding of deterministic MDP into LMDP implementation through SPA method*
-
 $$
 \begin{aligned}
 \min_{K \in \mathbb{R}} \quad \quad & \left\| \mathbf{v}_K - \mathbf{v}^* \right\|^2 \\
@@ -26,50 +23,51 @@ $$
 $$
 
 ![Embedding of deterministic MDP into LMDP through TS method](assets/img/lmdps/deterministic-mdp-embedding-ts.png)
-*Embedding of deterministic MDP into LMDP implementation through TS method*
 
 ![Deterministic MDP Embedding Methodologies Comparison](assets/img/lmdps/deterministic-mdp-embedding-scatter.png)
-*Deterministic MDP Embedding Approximations Comparison*
 
 ![Deterministic MDP Embedding Methodologies Comparison in large settings](assets/img/lmdps/deterministic-mdp-embedding-scatter-large.png)
-*Deterministic MDP Embedding Approximations Comparison in large settings*
 
 ![Deterministic MDP Embedding Approximations MSE Comparison by problem size](assets/img/lmdps/deterministic-mdp-embedding-mse.png)
-*Deterministic MDP Embedding Approximations MSE Comparison by problem size*
 
 ## Experimentation
 ### Exploration Strategies in Traditional MDPs
 
 ![Q-learning convergence and approximation MSE by exploration decay](assets/img/lmdps/q-learning-epsilon-decay.png)
-*Q-learning convergence and approximation MSE by exploration decay*
 
 ### Comparative Analysis of Z-learning and Q-learning
 #### Approximation Error and Episodic Reward
 
 ![Comparison of approximation error (top) and episodic reward (bottom) between Q-learning and Z-learning](assets/img/lmdps/zvsq-rew-err.png)
-*Comparison of approximation error (top) and episodic reward (bottom) between Q-learning and Z-learning.*
 
 #### Value Function and Policy Approximations
 
 ![Value function and policy approximations for Q-learning and Z-learning in a Minigrid multi-room domain](assets/img/lmdps/zvsq-val-multiroom.png)
-*Value function and policy approximations for Q-learning and Z-learning in a Minigrid multi-room domain*
 
 ![Value function and policy approximations for Q-learning and Z-learning in a Minigrid hill-cliff domain](assets/img/lmdps/zvsq-val-hill.png)
-*Value function and policy approximations for Q-learning and Z-learning in a Minigrid hill-cliff domain.*
 
 ### Agent Solutions
 
+<table>
+  <tr>
+    <td>
+      <img src="assets/video/lmdps/small-maze-lmdp.mp4" alt="Video 1" style="width:100%">
+    </td>
+    <td>
+      <img src="assets/video/lmdps/large-maze-mdp.mp4" alt="Video 2" style="width:100%">
+    </td>
+  </tr>
+</table>
+
 ![Grid World Maze with Q-learning](assets/video/lmdps/small-maze-lmdp.mp4)
-*Grid World Maze with Q-learning*
 
 ![Large Grid World Maze with Q-learning](assets/video/lmdps/large-maze-mdp.mp4)
-*Large Grid World Maze with Q-learning*
 
 ![Grid World Hill-Cliff with Q-learning](assets/video/lmdps/hill.mp4)
-*Grid World Hill-Cliff with Q-learning*
 
 ![Grid World Multi-Room with Z-learning](assets/video/lmdps/multi-room-lmdp.mp4)
-*Grid World Multi-Room with Z-learning*
+
+
 
 ## Requirements
 
@@ -86,5 +84,6 @@ You can install these requirements using pip:
 
 ```bash
 pip install -r requirements.txt
+```
 
 **Link to project webpage: https://davidperezcarrasco.github.io/projects/1_project/**
