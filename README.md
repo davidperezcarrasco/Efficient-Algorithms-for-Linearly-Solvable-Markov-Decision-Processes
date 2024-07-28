@@ -51,10 +51,10 @@ $$
 <table>
   <tr>
     <td>
-      <img src="assets/video/lmdps/small-maze-lmdp.mp4" alt="Video 1" style="width:100%">
+      <img src="assets/video/lmdps/small-maze-lmdp.gif" alt="Video 1" style="width:100%">
     </td>
     <td>
-      <img src="assets/video/lmdps/large-maze-mdp.mp4" alt="Video 2" style="width:100%">
+      <img src="assets/video/lmdps/large-maze-mdp.gif" alt="Video 2" style="width:100%">
     </td>
   </tr>
 </table>
