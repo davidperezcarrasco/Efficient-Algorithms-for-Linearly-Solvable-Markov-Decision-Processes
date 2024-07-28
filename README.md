@@ -54,20 +54,21 @@ $$
       <img src="assets/video/lmdps/small-maze-lmdp.gif" alt="Video 1" style="width:100%">
     </td>
     <td>
-      <img src="assets/video/lmdps/large-maze-mdp.gif" alt="Video 2" style="width:100%">
+      <img src="assets/video/lmdps/large-maze-mdp2.gif" alt="Video 2" style="width:100%">
     </td>
   </tr>
 </table>
 
-![Grid World Maze with Q-learning](assets/video/lmdps/small-maze-lmdp.mp4)
-
-![Large Grid World Maze with Q-learning](assets/video/lmdps/large-maze-mdp.mp4)
-
-![Grid World Hill-Cliff with Q-learning](assets/video/lmdps/hill.mp4)
-
-![Grid World Multi-Room with Z-learning](assets/video/lmdps/multi-room-lmdp.mp4)
-
-
+<table>
+  <tr>
+    <td>
+      <img src="assets/video/lmdps/hill.gif" alt="Video 1" style="width:100%">
+    </td>
+    <td>
+      <img src="assets/video/lmdps/multi-room-lmdp2.gif" alt="Video 2" style="width:100%">
+    </td>
+  </tr>
+</table>
 
 ## Requirements
 
