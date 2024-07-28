@@ -5,25 +5,14 @@ As part of my Bachelor's Thesis, I conducted in-depth research on reinforcement 
 This research evaluates and benchmarks the performance of traditional RL models against algorithms leveraging LMDPs, such as Z-learning, within an adaptable reinforcement learning framework. By implementing scalable and efficient versions of these algorithms, I provide a comprehensive comparison that highlights the advantages of LMDP-based approaches. Additionally, the thesis delves into various factors that enhance the decision-making capabilities of RL agents, such as algorithm design and exploration strategies, demonstrating the superiority of the LMDP framework in multiple settings. Moreover, I developed an RL simulator that provides a generalized implementation of MDP and LMDP frameworks. This simulator supports optimized core methods and seamless integration with repositories like Minigrid and Gymnasium, allowing researchers to easily extend and apply it to diverse problem definitions without the need to build custom solutions.
 
 ## Embedding Stochastic MDP into LMDPs
-<div class="row justify-content-sm-center">
-    <div class="col-sm-9">
-        {% include figure.liquid loading="eager" path="assets/img/lmdps/stochastic-mdp-embedding.png" title="Embedding of stochastic MDP into LMDP" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Embedding of stochastic MDP into LMDP implementation
-</div>
+
+![Embedding of stochastic MDP into LMDP](assets/img/lmdps/stochastic-mdp-embedding.png)
+*Embedding of stochastic MDP into LMDP implementation*
 
 ### Embedding Deterministic MDPs into LMDPs
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-9">
-        {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-spa.png" title="Embedding of deterministic MDP into LMDP" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption text-center">
-    Embedding of deterministic MDP into LMDP implementation through SPA method
-</div>
+![Embedding of deterministic MDP into LMDP](assets/img/lmdps/deterministic-mdp-embedding-spa.png)
+*Embedding of deterministic MDP into LMDP implementation through SPA method*
 
 $$
 \begin{aligned}
@@ -36,118 +25,51 @@ $$
 \end{aligned}
 $$
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-12">
-        {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-ts.png" title="Embedding of deterministic MDP into LMDP" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption text-center">
-    Embedding of deterministic MDP into LMDP implementation through TS method
-</div>
+![Embedding of deterministic MDP into LMDP through TS method](assets/img/lmdps/deterministic-mdp-embedding-ts.png)
+*Embedding of deterministic MDP into LMDP implementation through TS method*
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-12">
-        {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-scatter.png" title="Deterministic MDP Embedding Methodologies Comparison" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Deterministic MDP Embedding Approximations Comparison
-</div>
+![Deterministic MDP Embedding Methodologies Comparison](assets/img/lmdps/deterministic-mdp-embedding-scatter.png)
+*Deterministic MDP Embedding Approximations Comparison*
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-12">
-        {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-scatter-large.png" title="PDeterministic MDP Embedding Methodologies Comparison in large settings" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption text-center">
-    Deterministic MDP Embedding Approximations Comparison in large settings
-</div>
+![Deterministic MDP Embedding Methodologies Comparison in large settings](assets/img/lmdps/deterministic-mdp-embedding-scatter-large.png)
+*Deterministic MDP Embedding Approximations Comparison in large settings*
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-12">
-        {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-mse" title="Deterministic MDP Embedding Methodologies MSE comparison" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Deterministic MDP Embedding Approximations MSE Comparison by problem size
-</div>
+![Deterministic MDP Embedding Approximations MSE Comparison by problem size](assets/img/lmdps/deterministic-mdp-embedding-mse.png)
+*Deterministic MDP Embedding Approximations MSE Comparison by problem size*
 
 ## Experimentation
 ### Exploration Strategies in Traditional MDPs
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-9">
-        {% include figure.liquid loading="eager" path="assets/img/lmdps/q-learning-epsilon-decay.png" title="Q-learning convergence and approximation MSE by exploration decay" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Q-learning convergence and approximation MSE by exploration decay
-</div>
+![Q-learning convergence and approximation MSE by exploration decay](assets/img/lmdps/q-learning-epsilon-decay.png)
+*Q-learning convergence and approximation MSE by exploration decay*
 
 ### Comparative Analysis of Z-learning and Q-learning
 #### Approximation Error and Episodic Reward
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-9">
-        {% include figure.liquid loading="eager" path="assets/img/lmdps/zvsq-rew-err.png" title="Comparison of approximation error (top) and episodic reward (bottom) between Q-learning and Z-learning" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Comparison of approximation error (top) and episodic reward (bottom) between Q-learning and Z-learning.
-</div>
+![Comparison of approximation error (top) and episodic reward (bottom) between Q-learning and Z-learning](assets/img/lmdps/zvsq-rew-err.png)
+*Comparison of approximation error (top) and episodic reward (bottom) between Q-learning and Z-learning.*
 
 #### Value Function and Policy Approximations
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-12">
-        {% include figure.liquid loading="eager" path="assets/img/lmdps/zvsq-val-multiroom.png" title="Value function and policy approximations for Q-learning and Z-learning" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Value function and policy approximations for Q-learning and Z-learning in a Minigrid multi-room domain
-</div>
+![Value function and policy approximations for Q-learning and Z-learning in a Minigrid multi-room domain](assets/img/lmdps/zvsq-val-multiroom.png)
+*Value function and policy approximations for Q-learning and Z-learning in a Minigrid multi-room domain*
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-12">
-        {% include figure.liquid loading="eager" path="assets/img/lmdps/zvsq-val-hill.png" title="Value function and policy approximations for Q-learning and Z-learning" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Value function and policy approximations for Q-learning and Z-learning in a Minigrid hill-cliff domain.
-</div>
+![Value function and policy approximations for Q-learning and Z-learning in a Minigrid hill-cliff domain](assets/img/lmdps/zvsq-val-hill.png)
+*Value function and policy approximations for Q-learning and Z-learning in a Minigrid hill-cliff domain.*
 
-#### Agents Solutions
+### Agent Solutions
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
-        {% include video.liquid loading="eager" path="assets/video/lmdps/small-maze-lmdp.mp4" title="Grid World Maze with Q-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
-        <div class="caption">
-            Grid World Maze with Q-learning
-        </div>
-    </div>
-    <div class="col-sm-6 mt-3 mt-md-0">
-        {% include video.liquid loading="eager" path="assets/video/lmdps/large-maze-mdp.mp4" title="Large Grid World Maze with Q-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
-        <div class="caption">
-            Large Grid World Maze with Q-learning
-        </div>
-    </div>
-</div>
+![Grid World Maze with Q-learning](assets/video/lmdps/small-maze-lmdp.mp4)
+*Grid World Maze with Q-learning*
 
+![Large Grid World Maze with Q-learning](assets/video/lmdps/large-maze-mdp.mp4)
+*Large Grid World Maze with Q-learning*
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
-        {% include video.liquid loading="eager" path="assets/video/lmdps/hill.mp4" title="Grid World Hill-Cliff with Q-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
-        <div class="caption">
-            Grid World Hill-Cliff with Q-learning
-        </div>
-    </div>
-    <div class="col-sm-6 mt-3 mt-md-0">
-        {% include video.liquid loading="eager" path="assets/video/lmdps/multi-room-lmdp.mp4" title="Grid World Multi-Room with Z-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
-        <div class="caption">
-            Grid World Multi-Room with Z-learning
-        </div>
-    </div>
-</div>
+![Grid World Hill-Cliff with Q-learning](assets/video/lmdps/hill.mp4)
+*Grid World Hill-Cliff with Q-learning*
+
+![Grid World Multi-Room with Z-learning](assets/video/lmdps/multi-room-lmdp.mp4)
+*Grid World Multi-Room with Z-learning*
 
 ## Requirements
 
