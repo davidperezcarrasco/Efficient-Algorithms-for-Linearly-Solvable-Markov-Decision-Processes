@@ -65,28 +65,6 @@ $$
   </tr>
 </table>
 
-<table>
-  <tr>
-    <td>
-      <img src="assets/video/lmdps/small-maze-lmdp.gif" alt="Video 1" style="width:100%">
-    </td>
-    <td>
-      <img src="assets/video/lmdps/large-maze-mdp2.gif" alt="Video 2" style="width:100%">
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <td>
-      <img src="assets/video/lmdps/hill.gif" alt="Video 1" style="width:100%">
-    </td>
-    <td>
-      <img src="assets/video/lmdps/multi-room-lmdp2.gif" alt="Video 2" style="width:100%">
-    </td>
-  </tr>
-</table>
-
 ## Requirements
 
 The project requires the following Python libraries:
