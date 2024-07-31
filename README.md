@@ -82,4 +82,4 @@ You can install these requirements using pip:
 pip install -r requirements.txt
 ```
 
-**Link to project webpage: https://davidperezcarrasco.github.io/projects/1_project/**
+**Link to project webpage: https://davidperezcarrasco.github.io/projects/lmdps/**
