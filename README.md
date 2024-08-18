@@ -13,14 +13,29 @@ This research evaluates and benchmarks the performance of traditional RL models 
 ![Embedding of deterministic MDP into LMDP](assets/img/lmdps/deterministic-mdp-embedding-spa.png)
 
 $$
-\begin{aligned}
-\min_{K \in \mathbb{R}} \quad \quad & \left\| \mathbf{v}_K - \mathbf{v}^* \right\|^2 \\
-\text{subject to} \quad \quad & \mathbf{\mathcal{R}} = K \cdot \mathbf{\hat{\mathcal{R}}}, \\
-& G_{ii} = e^{\mathcal{R}(s_i)/\lambda}, \quad \forall i \in \mathbb{N} \cap [1, |\mathcal{S}|], \\
-& \mathbf{z}_K = G\mathcal{P}\mathbf{z}_K, \\
-& \mathbf{v}_K = \lambda \log{\mathbf{z}_K}, \\
-& \mathbf{v}^* = \max_{a} \left[ \tilde{\mathbf{R}}_a + \gamma \mathbf{\tilde{P}}_a \mathbf{v}^* \right].
-\end{aligned}
+\min_{K \in \mathbb{R}} \quad \| \mathbf{v}_K - \mathbf{v}^* \|^2
+$$
+
+**subject to:**
+
+$$
+\mathbf{\mathcal{R}} = K \cdot \mathbf{\hat{\mathcal{R}}},
+$$
+
+$$
+G_{ii} = e^{\mathcal{R}(s_i)/\lambda}, \quad \forall i \in \mathbb{N} \cap [1, |\mathcal{S}|],
+$$
+
+$$
+\mathbf{z}_K = G\mathcal{P}\mathbf{z}_K,
+$$
+
+$$
+\mathbf{v}_K = \lambda \log{\mathbf{z}_K},
+$$
+
+$$
+\mathbf{v}^* = \max_{a} \left[ \tilde{\mathbf{R}}_a + \gamma \mathbf{\tilde{P}}_a \mathbf{v}^* \right].
 $$
 
 ![Embedding of deterministic MDP into LMDP through TS method](assets/img/lmdps/deterministic-mdp-embedding-ts.png)
