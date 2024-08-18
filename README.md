@@ -11,6 +11,7 @@ This research evaluates and benchmarks the performance of traditional RL models 
 ## Embedding Deterministic MDPs into LMDPs
 
 ![Embedding of deterministic MDP into LMDP](assets/img/lmdps/deterministic-mdp-embedding-spa.png)
+
 $$
 \begin{aligned}
 \min_{K \in \mathbb{R}} \quad \quad & \left\| \mathbf{v}_K - \mathbf{v}^* \right\|^2 \\
